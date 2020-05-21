@@ -9,3 +9,5 @@ burger_name varchar (222) NOT NULL,
 devoured BOOLEAN DEFAULT false ,
 PRIMARY(id)
 );
+
+
