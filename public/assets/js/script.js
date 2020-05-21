@@ -2,11 +2,11 @@ $(document).ready(function () {
   $(".devour-form").on("submit", function (event) {
     event.preventDefault();
 
-    var burger_id = $(this).children(".burger_id").val();
-    console.log(burger_id);
+    var burger_name = $(this).children(".burger_name").val();
+    console.log(burger_name);
     $.ajax({
       method: "PUT",
-      url: "/burgers/" + burger_id,
+      url: "/burgers/" + burger_name,
     }).then(function (data) {
       // reload page to display devoured burger in proper column
       location.reload();
